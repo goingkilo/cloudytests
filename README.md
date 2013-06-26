@@ -1,4 +1,4 @@
-Demo:
+
 If all the components work, then you'll see the code   
 - launch a browser   
 - login into github for you (java:asks credentials python:needs them in .py file)  
@@ -8,18 +8,19 @@ If all the components work, then you'll see the code
 - run two token R commands on the editor box  
 
 
-dependencies 
+**Dependencies**  
 needs chromedriver file from  https://code.google.com/p/selenium/wiki/ChromeDriver
 
-*python*
+**Python**  
 needs selenium : pip install selenium  
 (you can get pip via apt-get  )
 
- needs your github id and password
- also expects chromedriver in ./driver/chromedriver
-python chrometest.py
+ needs your github id and password  
+  also expects chromedriver in ./driver/chromedriver
 
-*java*
+_python chrometest.py_
+
+**Java**  
 command to execute:
 java -jar rcloud_automation.jar <rcloud launch URL> <path to chromedriver>
 
@@ -30,6 +31,6 @@ java -jar rcloud_automation.jar <rcloud launch URL> <path to chromedriver>
 
 example :
 
-java -jar rcloud_automation.jar http://127.0.0.1:8080/login.html ./chromedriver
+_java -jar rcloud_automation.jar http://127.0.0.1:8080/login.html ./chromedriver_
 
 
