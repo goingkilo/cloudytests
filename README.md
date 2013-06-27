@@ -34,3 +34,8 @@ example :
 _java -jar rcloud_automation.jar http://127.0.0.1:8080/login.html ./chromedriver_
 
 
+**todo**
+-add jenkins hook-
+add qunit test cases
+
+
