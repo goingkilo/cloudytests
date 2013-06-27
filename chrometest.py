@@ -20,8 +20,8 @@ page1.submit()
 gid = driver.find_element_by_name("login")
 gpwd =driver.find_element_by_name("password") 
 
-gid.send_keys('id here')
-gpwd.send_keys('password here')
+gid.send_keys('goingkilo')
+gpwd.send_keys('frog7jumper')
 
 ubmit = driver.find_element_by_name("commit");
 ubmit.submit();
@@ -34,12 +34,15 @@ import time
 
 #time.sleep(10)
 
-runnote  = driver.find_element_by_partial_link_text('un No')
+runnote  = driver.find_element_by_partial_link_text('Run')
 
 print 10*'#',runnote
 	
-time.sleep(2)
+css_of_new_notebook = 'div#editor-book-tree ul.tree li.folder ul li div span.title'
+new_notebook = driver.find_element_by_css_selector( css_of_new_notebook )
+new_notebook.click()
 
+time.sleep(2)
 filenode = driver.find_element_by_css_selector("div#editor-file-tree ul.tree li.folder ul li.folder ul")
 files = filenode.find_elements_by_css_selector('li')
 nf = len(files)-1
@@ -68,7 +71,7 @@ cmd.send_keys(Keys.ENTER)
 
 
 try:
-	n6  = driver.find_element_by_partial_link_text('ew Fi')
+	n6  = driver.find_element_by_partial_link_text('New Note')
 	print n6
 except:
 	print 'no partial link text'
