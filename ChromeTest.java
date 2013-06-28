@@ -26,8 +26,8 @@ public class ChromeTest{
 		WebElement githubname = driver.findElement(By.name("login"));
 		WebElement githubpasd = driver.findElement(By.name("password"));
 
-		githubname.sendKeys("goingkilo");
-		githubpasd.sendKeys("frog7jumper");
+		githubname.sendKeys("corporatelass");
+		githubpasd.sendKeys("redoctober");
 
 		WebElement githubsubmit = driver.findElement(By.name("commit"));
 		githubsubmit.submit();
