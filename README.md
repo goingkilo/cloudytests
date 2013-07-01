@@ -1,4 +1,3 @@
-
 If all the components work, then you'll see the code   
 - launch a browser   
 - login into github for you (java:asks credentials python:needs them in .py file)  
@@ -7,6 +6,7 @@ If all the components work, then you'll see the code
 - enter a generated file name  
 - run two token R commands on the editor box  
 
+-- --
 
 **Dependencies**  
 needs chromedriver file from  https://code.google.com/p/selenium/wiki/ChromeDriver
