@@ -20,8 +20,8 @@ page1.submit()
 gid = driver.find_element_by_name("login")
 gpwd =driver.find_element_by_name("password") 
 
-gid.send_keys('goingkilo')
-gpwd.send_keys('frog7jumper')
+gid.send_keys('userid')
+gpwd.send_keys('password')
 
 ubmit = driver.find_element_by_name("commit");
 ubmit.submit();
