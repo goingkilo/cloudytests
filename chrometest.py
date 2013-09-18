@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 import random
 
 # Create a new instance of the Firefox driver
-driverisat = './driver/chromedriver'
+driverisat = './chromedriver'
 driver = webdriver.Chrome( driverisat )
 
 driver.get("http://localhost:8080/login.html")
